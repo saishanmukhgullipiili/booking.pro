@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>BookingPro | Explore Destinations</title>
+</head>
+<body>
+    <div class="container">
+        <nav>
+            <div class="nav__logo">
+                <h1>BOOKING.PRO</h1>
+            </div>
+            <!-- <ul class="nav__links">
+                <li class="link"><a href="#">Home</a></li>
+                <li class="link"><a href="#">Destinations</a></li>
+                <li class="link"><a href="#">Contact Us</a></li>
+                <li class="link"><a href="#">Blog</a></li>
+            </ul>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <span><i class="ri-search-line"></i></span>
+            </div> 
+            <div class="login" id="userSection">
+                <span id="userName"><i class="ri-user-3-fill" style="border-radius: 0%;"></i> Log In</span>
+            </div>
+            -->
+        </nav>
+
+        <div class="destination__container">
+            <img class="bg_img_1" src="assets/bg-dots.png" alt="bg">
+            <img class="bg_img_2" src="assets/bg-arrow.png" alt="bg">
+            <div class="socials">
+                <span><i class="ri-twitter-fill"></i></span>
+                <span><i class="ri-facebook-fill"></i></span>
+                <span><i class="ri-instagram-line"></i></span>
+                <span><i class="ri-youtube-fill"></i></span>
+            </div>
+            <div class="content">
+                <h1>EXPLORE<br>DREAM<br><span>DESTINATION</span></h1>
+                <p>"Explore, Dream, Discover: Book your perfect getaway! Find hotels, flights, and packages to top destinations worldwide. Unlock exclusive deals and discounts to make your trip unforgettable. Get Started now and turn your travel dreams into reality!"</p>
+                <button id="sign-in-btn" class="btn">GET STARTED</button>
+            </div>
+
+            <div class="destination__grid">
+                <div class="destination__card">
+                    <img src="assets/destination-1.jpg" alt="destination">
+                    <div class="card__content">
+                        <h4>10 Must-Visit Hidden Gems</h4>
+                        <p>Discover off-the-beaten-path locations and hidden gems within dream destinations, taking you beyond the typical tourist spots.</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+                <div class="destination__card">
+                    <img src="assets/destination-2.jpg" alt="destination">
+                    <div class="card__content">
+                        <h4>
+                            <ul>
+                                <li>Book Hotels</li>
+                                <li>Flights</li>
+                                <li>Car Rentals</li>
+                                <li>Packages</li>
+                                <li>Great Deals</li>
+                            </ul>
+                        </h4>
+                        <p>Sign up now and unlock access to our amazing features!</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+                <div class="destination__card">
+                    <img src="assets/destination-3.jpg" alt="destination">
+                    <div class="card__content">
+                        <h4>
+                            <ul>
+                                <li>Explore & Discover</li>
+                                <li>Plan & Book</li>
+                                <li>Inspire & Guide</li>
+                                <li>Manage</li>
+                                <li>Track</li>
+                            </ul>
+                        </h4>
+                        <p>Turn your dreams into reality!</p>
+                        <button class="btn">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Redirect "Get Started" button to login page
+        document.getElementById("sign-in-btn").addEventListener("click", function () {
+            window.location.href = "login.html"; 
+        });
+
+        // document.addEventListener("DOMContentLoaded", function () {
+        //     let user = localStorage.getItem("user");
+
+        //     if (user) {
+        //         user = JSON.parse(user);
+        //         document.getElementById("userName").innerHTML = `<i class="ri-user-3-fill"></i> ${user.name}`;
+                
+        //         document.getElementById("userSection").addEventListener("click", function () {
+        //             let logoutConfirm = confirm("Do you want to log out?");
+        //             if (logoutConfirm) {
+        //                 localStorage.removeItem("user");
+        //                 window.location.reload();
+        //             }
+        //         });
+        //     } else {
+        //         document.getElementById("userSection").addEventListener("click", function () {
+        //             window.location.href = "login.html";
+        //         });
+        //     }
+        // });
+    </script>
+
+</body>
+</html>

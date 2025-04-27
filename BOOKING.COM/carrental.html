@@ -1,0 +1,361 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rentls</title>
+    <link rel="stylesheet" href="./styles/carrentals.css">
+    <link rel="stylesheet" href="./fonts/css/all.css">
+    <link rel="stylesheet" href="./style/nav.css">
+    <link rel="stylesheet" href="./style/foot.css">
+</head>
+<body>
+        <nav class="navbar">
+            <div class="nav__logo">BOOKING.PRO</div>
+    
+            <!-- Hamburger Menu Button -->
+            <div class="hamburger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+    
+            <!-- Mobile Menu Container -->
+            <div class="nav-mobile-container">
+              <div class="nav-center">
+                <button class="nav-btn" id="hotels">🏨 Hotels</button>
+                <button class="nav-btn active" id="car-hire">🚗 Car hire</button>
+                <button class="nav-btn " id="flights">✈️ Flights</button>
+              </div>
+              <!-- <div class="login" id="userSection">
+                <span id="userName"><i class="ri-user-3-fill" style="border-radius: 0%;"></i> Log In</span>
+            </div> -->
+              <div class="nav-auth">
+                <button class="auth-btn logout">Logout</button>
+              </div>
+            </div>
+    </nav>
+    <div id="car1">
+        <div id="car2">
+            <h2>Car hire for any kind of trip</h2>
+            <p>Compare deals from the biggest car hire companies</p>
+            <input type="radio" id="oneway" name="select1">
+            <label for="oneway">OReturn to same location</label>
+
+            <input type="radio" id="return" name="select1">
+            <label for="return">Return to different location</label>
+            <div id="searchdiv">
+                 <div>
+                    <div><i class="fa-solid fa-location-dot fa-lg"></i></div>
+                    <input type="text" placeholder="Enter Pick-Up Location">
+                 </div>
+               
+                 <div>
+                    <div></div>
+                    <input type="datetime-local" placeholder=""/>
+                 </div>
+                 <div>
+                    <div></div>
+                    <input type="datetime-local" placeholder="" value="12:00">
+                 </div>
+                
+                 <button id="searchbtn">Search</button>
+                
+
+            </div>
+
+            <div id="car3"><input type="checkbox" id="ckeck">
+            <label for="check">Driver aged between 30 - 65</label>
+             </div>
+        </div>
+</div>
+<div id="car1.5">
+        <div id="car4">
+            <h3>Clean cars. Flexible bookings. Socially distant rental counters.</h3>
+            <div>
+                <p>Please check local guidelines before planning your visit.</p>
+                <p><span>
+                    Learn more
+                </span></p>
+            </div>
+        </div>
+
+        <div id="car5">
+            <div><img src="https://cf.bstatic.com/static/img/cars/cars_genius_discount/08e39e81430e2376eeef1c607f4ae513d53408a6.svg" alt="img1"></div>
+            <div>
+                <h3>Save 10% with Genius</h3>
+                <p>Look for the Genius logo on select car rentals to save.</p>
+            </div>
+        </div>
+        <h2 class="car6">Popular car hire brands</h2>
+        <div id="car6">
+            <div class="carr" style="border: 1px solid #00605f;"><img src="https://cdn.rcstatic.com/images/supplier_logos/europcar_logo_lrg.gif" alt="img2"></div>
+            <div class="carr" style="border: 1px solid #00605f;"><img src="https://cdn.rcstatic.com/images/supplier_logos/alamo_logo_lrg.gif" alt="img3"></div>
+            <div class="carr" style="border: 1px solid #00605f;"><img src="https://cdn.rcstatic.com/images/suppliers/flat/sixt_logo_lrg.gif" alt="img4"></div>
+             <div class="carr" style="border: 1px solid #00605f;"><img src="https://cdn.rcstatic.com/images/supplier_logos/avis_logo_lrg.gif" alt="img5"></div>
+        </div>
+
+        <h3 class="car7">Popular destinations for car hire</h3>
+        <div id="car7">
+            <div class="carr">
+                <img src="https://cf.bstatic.com/xdata/images/city/360x240/613095.webp?k=8caf960d96a59e284ac1518ac8777e89d17fda6572acd84dbec151f627c7bf07&o=" alt="">
+                <h3>London</h3>
+                <p>Car hire 75 pick-up per day</p>
+                <div class="car71">
+                    <div><i class="fa-solid fa-car fa-2xl"></i></div>
+                    <p>From ₹ 3,456.44 per day</p>
+                </div>
+                <p class="blue">Search cars in London</p>
+            </div>
+
+            <div class="carr">
+                <img src="https://cf.bstatic.com/xdata/images/city/360x240/613088.webp?k=a370ac3fb385fb211b35a79a42b0e968ddb458be37108af476c558bf4cedc1f3&o=" alt="">
+                <h3>Paris</h3>
+                <p>Car hire 75 pick-up per day</p>
+                <div class="car71">
+                    <div><i class="fa-solid fa-car fa-2xl"></i></div>
+                    <p>From ₹ 3,456.44 per day</p>
+                </div>
+                <p class="blue">Search cars in paris</p>
+            </div>
+
+            <div class="carr">
+                <img src="https://cf.bstatic.com/xdata/images/city/360x240/971353.webp?k=a5b47d2c38469086427837dfe64ab2e6f57ba52f0504359ef4cc02dc4b9b0737&o=" alt="">
+                <h3>Madrid</h3>
+                <p>Car hire 75 pick-up per day</p>
+                <div class="car71">
+                    <div><i class="fa-solid fa-car fa-2xl"></i></div>
+                    <p>From ₹ 3,456.44 per day</p>
+                </div>
+                <p class="blue">Search cars in madrid</p>
+            </div>
+
+            <div class="carr">
+                <img src="https://cf.bstatic.com/xdata/images/city/360x240/619932.webp?k=81c20cf1191a1d05472b45413bed3cee67dc92b8c1387c60a960beb5629f109d&o=" alt="">
+                <h3>dubai</h3>
+                <p>Car hire 75 pick-up per day</p>
+                <div class="car71">
+                    <div><i class="fa-solid fa-car fa-2xl"></i></div>
+                    <p>From ₹ 3,456.44 per day</p>
+                </div>
+                <p class="blue">Search cars in dubai</p>
+            </div>
+
+            <div class="carr">
+                <img src="https://cf.bstatic.com/xdata/images/city/360x240/645577.webp?k=81d61cb4e120af4d4218386546a117b77ef18dfcf3727d186ec3a1aad60f38fe&o=" alt="">
+                <h3>Malaga</h3>
+                <p>Car hire 75 pick-up per day</p>
+                <div class="car71">
+                    <div><i class="fa-solid fa-car fa-2xl"></i></div>
+                    <p>From ₹ 3,456.44 per day</p>
+                </div>
+                <p class="blue">Search cars in malaga</p>
+            </div>
+
+            <div class="carr">
+                <img src="https://cf.bstatic.com/xdata/images/city/360x240/619965.webp?k=8b2bc851e921e03c4565fe28e4f608c30223227743b3b2cc56c476a5ef04d3da&o=" alt="">
+                <h3>Lisbon</h3>
+                <p>Car hire 75 pick-up per day</p>
+                <div class="car71">
+                    <div><i class="fa-solid fa-car fa-2xl"></i></div>
+                    <p>From ₹ 3,456.44 per day</p>
+                </div>
+                <p class="blue">Search cars in Lisbon</p>
+            </div>
+        </div>
+    </div>
+    <div id="car8" class="carr">
+        <div class="car8 ">
+              <div>
+                <div><i class="fa-solid fa-headphones-simple fa-2xl"></i></div>
+                <div >
+                    <h3>Customer Service</h3>
+                    <p>24/7 customer service</p>
+                </div>
+              </div>
+
+              <div>
+                <div><i class="fa-solid fa-check fa-2xl"></i></div>
+                <div>
+                    <h3>Free cancellation</h3>
+                    <p>Available on most cars</p>
+                </div>
+              </div>
+
+              <div>
+                <div><i class="fa-regular fa-star fa-2xl"></i></div>
+                <div>
+                    <h3>3.5+ million reviews</h3>
+                    <p>By real, verified customers</p>
+                </div>
+              </div>
+        </div>
+    </div>
+    <h2 class="car91">Popular car rental destinations</h2>;
+    <p style="margin-left: 150px;">Explore more options to rent a car for cheap</p>
+    <div class="grid-container carr" style="border-radius:10px; height: auto; margin-left: 80px; margin-right: 80px; margin-top: 20px;">
+        <div class="grid-item" style="display: flex; gap: 20px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/square100/845333.jpg?k=f47c325550e3ff69a17747251afb914ed336e44f882de776f264ad60e38562af&o=" alt="place1" style="height: 80px; border-radius: 20px;">
+            <div style="text-align: left;">
+            <h3 style="margin-bottom: 10px;">Ei Segundo</h3>
+            <p style="font-weight: 10px;">103 car rental locations</p>
+            <p>Average price of <b>₹ 4,869.91</b> per day</p>
+            </div>
+        </div>
+        <div class="grid-item" style="display: flex; gap: 20px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/square100/979186.jpg?k=362b73e4d93b2a2888d5493625851d1a0262ccd49fd43813f954693d5230321f&o=" alt="place1" style="height: 80px; border-radius: 20px;">
+            <div style="text-align: left;">
+            <h3 style="margin-bottom: 10px;">Dania Beach</h3>
+            <p style="font-weight: 10px;">92 car rental locations</p>
+            <p>Average price of <b>₹ 3,667.47</b> per day</p>
+            </div>
+        </div>
+        <div class="grid-item" style="display: flex; gap: 20px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/square100/690434.jpg?k=47818f3928a2a5d7b8d0e2bd834860f09be17ec3366340d5ca678658f5edf3ab&o=" alt="place1" style="height: 80px; border-radius: 20px;">
+            <div style="text-align: left;">
+            <h3 style="margin-bottom: 10px;">Irving</h3>
+            <p style="font-weight: 10px;">81 car rental locations</p>
+            <p>Average price of <b>₹ 4,823.81 </b>per day</p>
+            </div>
+        </div>
+        <div class="grid-item" style="display: flex; gap: 20px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/square100/763926.jpg?k=b8fb8903766db533a1ea71b1f2d32e6af2b4436cc0cbd294a7ce32625bc7e38e&o=" alt="place1" style="height: 80px; border-radius: 20px;">
+            <div style="text-align: left;">
+            <h3 style="margin-bottom: 10px;">Coolangatta</h3>
+            <p style="font-weight: 10px;">22 car rental locations</p>
+            <p>Average price of <b>4,211.98 </b> per day</p>
+            </div>
+        </div>
+        <div class="grid-item" style="display: flex; gap: 20px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/square100/976755.jpg?k=9393732a057dcf5a85687db3be404e40c9e4829a45f3fcb35dff63dc18743de3&o=" alt="place1" style="height: 80px; border-radius: 20px;">
+            <div style="text-align: left;">
+            <h3 style="margin-bottom: 10px;">Phoenix</h3>
+            <p style="font-weight: 10px;">70 car rental locations</p>
+            <p>Average price of <b>₹ 3,667.47</b> per day</p>
+            </div>
+        </div>
+        <div class="grid-item" style="display: flex; gap: 20px;">
+            <img src="https://q-xx.bstatic.com/xdata/images/city/square100/653168.jpg?k=ceda450b4ea447e9d2f8d04bf6bcc061bcfd571d4f85dfb02002dc9d863732e1&o=" alt="place1" style="height: 80px; border-radius: 20px;">
+            <div style="text-align: left;">
+            <h3 style="margin-bottom: 10px;">Calgory</h3>
+            <p style="font-weight: 10px;">103 car rental locations</p>
+            <p>Average price of<b> ₹ 3,667.47</b> per day</p>
+            </div>
+        </div>
+    </div>
+    <div id="car9">
+        <div class="car9">
+        </div>
+    </div>
+     <!-- ----- Footer Section ----- -->
+     <footer>
+        <!-- Footer Columns -->
+        <div class="footer-columns">
+          <div class="footer-column">
+            <h3>Support</h3>
+            <ul>
+              <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
+              <li><a href="#">Manage your trips</a></li>
+              <li><a href="#">Contact Customer Service</a></li>
+              <li><a href="#">Safety Resource Center</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Discover</h3>
+            <ul>
+              <li><a href="#">Genius loyalty program</a></li>
+              <li><a href="#">Seasonal and holiday deals</a></li>
+              <li><a href="#">Travel articles</a></li>
+              <li><a href="#">Booking.Pro for Business</a></li>
+              <li><a href="#">Traveller Review Awards</a></li>
+              <li><a href="#">Car rental</a></li>
+              <li><a href="#">Flight finder</a></li>
+              <li><a href="#">Restaurant reservations</a></li>
+              <li><a href="#">Booking.Pro for Travel Agents</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Terms and settings</h3>
+            <ul>
+              <li><a href="#">Privacy & cookies</a></li>
+              <li><a href="#">Terms & conditions</a></li>
+              <li><a href="#">Grievance officer</a></li>
+              <li><a href="#">Modern Slavery Statement</a></li>
+              <li><a href="#">Human Rights Statement</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>Partners</h3>
+            <ul>
+              <li><a href="#">Extranet login</a></li>
+              <li><a href="#">Partner help</a></li>
+              <li><a href="#">List your property</a></li>
+              <li><a href="#">Become an affiliate</a></li>
+            </ul>
+          </div>
+          <div class="footer-column">
+            <h3>About</h3>
+            <ul>
+              <li><a href="#">About Booking.Pro</a></li>
+              <li><a href="#">How We Work</a></li>
+              <li><a href="#">Sustainability</a></li>
+              <li><a href="#">Press center</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Investor relations</a></li>
+              <li><a href="#">Corporate contact</a></li>
+            </ul>
+          </div>
+        </div>
+  
+        <!-- Currency and Copyright Section -->
+        <div class="footer-bottom">
+          <div class="currency">
+            <img
+              src="https://t-cf.bstatic.com/design-assets/assets/v3.138.1/images-flags/In@3x.png"
+              alt="Flag"
+            />
+            <span>INR</span>
+          </div>
+          <div class="light-line"></div>
+  
+          <p>
+            Booking.Pro is part of Booking Holdings Inc., the world leader in
+            online travel and related services.
+          </p>
+          <p>Copyright ©2025 Booking.Pro™. All rights reserved.</p>
+          <div class="brands">
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+              alt="Booking.com"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+              alt="Priceline"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+              alt="Kayak"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+              alt="Agoda"
+            />
+            <img
+              src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+              alt="OpenTable"
+            />
+          </div>
+        </div>
+      </footer>
+      <script src="./script/carrental.js"></script>
+      <script src="./scripts/booking.js"></script>
+</body>
+</html>
+<script type="module" >
+    import nav from "./component/nav.js"
+    import footer from "./component/footer.js"
+    document.querySelector("nav").innerHTML = nav()
+    document.querySelector('footer').innerHTML = footer();
+</script>

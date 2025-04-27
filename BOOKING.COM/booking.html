@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+    <!--modified-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles/booking.css" />
+    <title>Hotel Booking</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Navbar Section -->
+      <nav class="navbar">
+        <div class="nav__logo">BOOKING.PRO</div>
+
+        <!-- Hamburger Menu Button -->
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- Mobile Menu Container -->
+        <div class="nav-mobile-container">
+          <div class="nav-center">
+            <button class="nav-btn" id="hotels">🏨 Hotels</button>
+            <button class="nav-btn" id="car-hire">🚗 Car hire</button>
+            <button class="nav-btn active" id="flights">✈️ Flights</button>
+          </div>
+          <div class="login" id="userSection">
+            <span id="userName"><i class="ri-user-3-fill" style="border-radius: 0%;"></i> Log In</span>
+        </div>
+          <div class="nav-auth">
+            <button class="auth-btn logout">Logout</button>
+          </div>
+        </div>
+      </nav>
+
+      <header class="section_container header_container">
+        <div class="header_image_container">
+          <div class="header__content">
+            <h1>Enjoy Your Dream Vacation</h1>
+            <p>Book Hotels, Flights and stay packages at lowest price.</p>
+          </div>
+          <div class="booking__container">
+            <form>
+              <div class="form__group">
+                <div class="input__group">
+                  <input type="text" />
+                  <label>Location</label>
+                </div>
+                <p>Where are you going?</p>
+              </div>
+              <div class="form__group">
+                <div class="input__group">
+                  <input type="text" />
+                  <label>Check In</label>
+                </div>
+                <p>Add date</p>
+              </div>
+              <div class="form__group">
+                <div class="input__group">
+                  <input type="text" />
+                  <label>Check Out</label>
+                </div>
+                <p>Add date</p>
+              </div>
+              <div class="form__group">
+                <div class="input__group">
+                  <input type="text" />
+                  <label>Guests</label>
+                </div>
+                <p>Add guests</p>
+              </div>
+            </form>
+            <button class="btn"><i class="ri-search-line"></i></button>
+          </div>
+        </div>
+      </header>
+
+      <section class="section_container popular_container">
+        <h2 class="section__header">Popular Hotels</h2>
+        <div class="popular__grid">
+          <div class="popular__card">
+            <img src="assets/hotel-1.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular_card_header">
+                <h4>The Plaza Hotel</h4>
+                <h4>$499</h4>
+              </div>
+              <p>New York City, USA</p>
+            </div>
+          </div>
+          <div class="popular__card">
+            <img src="assets/hotel-2.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular_card_header">
+                <h4>Ritz Paris</h4>
+                <h4>$549</h4>
+              </div>
+              <p>Paris, France</p>
+            </div>
+          </div>
+          <div class="popular__card">
+            <img src="assets/hotel-3.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular_card_header">
+                <h4>The Peninsula</h4>
+                <h4>$599</h4>
+              </div>
+              <p>Hong Kong</p>
+            </div>
+          </div>
+          <div class="popular__card">
+            <img src="assets/hotel-4.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular_card_header">
+                <h4>Atlantis The Palm</h4>
+                <h4>$449</h4>
+              </div>
+              <p>Dubai, United Arab Emirates</p>
+            </div>
+          </div>
+          <div class="popular__card">
+            <img src="assets/hotel-5.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular_card_header">
+                <h4>The Ritz-Carlton</h4>
+                <h4>$649</h4>
+              </div>
+              <p>Tokyo, Japan</p>
+            </div>
+          </div>
+          <div class="popular__card">
+            <img src="assets/hotel-6.jpg" alt="popular hotel" />
+            <div class="popular__content">
+              <div class="popular_card_header">
+                <h4>Marina Bay Sands</h4>
+                <h4>$549</h4>
+              </div>
+              <p>Singapore</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+
+      <div>
+        <h1>Book Hotels at Popular Destinations</h1>
+        <div class="destinations-grid" id="destinationsGrid">
+            <!-- Destinations will be inserted here by JavaScript -->
+        </div>
+        <div class="view-more-container">
+            <button class="view-more-btn" id="viewMoreBtn">View More</button>
+        </div>
+      </div>
+
+
+      <section class="client">
+        <div class="section_container client_container">
+          <h2 class="section__header" style="margin-top: 60px">
+            What our client say
+          </h2>
+          <div class="client__grid">
+            <div class="client__card">
+              <img src="assets/client-1.jpg" alt="client" />
+              <p>
+                The booking process was seamless, and the confirmation was
+                instant. I highly recommend Booking.Pro for hassle-free hotel
+                bookings.
+              </p>
+            </div>
+            <div class="client__card">
+              <img src="assets/client-2.jpg" alt="client" />
+              <p>
+                The website provided detailed information about hotel, including
+                amenities, photos, which helped me make an informed decision.
+              </p>
+            </div>
+            <div class="client__card">
+              <img src="assets/client-3.jpg" alt="client" />
+              <p>
+                I was able to book a room within minutes, and the hotel exceeded
+                my expectations. I appreciate Booking.Pro efficiency and
+                reliability.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__container">
+        <div class="reward__container">
+          <p>100+ discount codes</p>
+          <h4>Join rewards and discover amazing discounts on your booking</h4>
+          <button class="reward__btn">Join Rewards</button>
+        </div>
+      </section>
+    </div>
+
+    <!-- ----- Footer Section ----- -->
+    <footer>
+      <!-- Footer Columns -->
+      <div class="footer-columns">
+        <div class="footer-column">
+          <h3>Support</h3>
+          <ul>
+            <li><a href="#">Coronavirus (COVID-19) FAQs</a></li>
+            <li><a href="#">Manage your trips</a></li>
+            <li><a href="#">Contact Customer Service</a></li>
+            <li><a href="#">Safety Resource Center</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Discover</h3>
+          <ul>
+            <li><a href="#">Genius loyalty program</a></li>
+            <li><a href="#">Seasonal and holiday deals</a></li>
+            <li><a href="#">Travel articles</a></li>
+            <li><a href="#">Booking.Pro for Business</a></li>
+            <li><a href="#">Traveller Review Awards</a></li>
+            <li><a href="#">Car rental</a></li>
+            <li><a href="#">Flight finder</a></li>
+            <li><a href="#">Restaurant reservations</a></li>
+            <li><a href="#">Booking.Pro for Travel Agents</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Terms and settings</h3>
+          <ul>
+            <li><a href="#">Privacy & cookies</a></li>
+            <li><a href="#">Terms & conditions</a></li>
+            <li><a href="#">Grievance officer</a></li>
+            <li><a href="#">Modern Slavery Statement</a></li>
+            <li><a href="#">Human Rights Statement</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>Partners</h3>
+          <ul>
+            <li><a href="#">Extranet login</a></li>
+            <li><a href="#">Partner help</a></li>
+            <li><a href="#">List your property</a></li>
+            <li><a href="#">Become an affiliate</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h3>About</h3>
+          <ul>
+            <li><a href="#">About Booking.Pro</a></li>
+            <li><a href="#">How We Work</a></li>
+            <li><a href="#">Sustainability</a></li>
+            <li><a href="#">Press center</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Investor relations</a></li>
+            <li><a href="#">Corporate contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Currency and Copyright Section -->
+      <div class="footer-bottom">
+        <div class="currency">
+          <img
+            src="https://t-cf.bstatic.com/design-assets/assets/v3.138.1/images-flags/In@3x.png"
+            alt="Flag"
+          />
+          <span>INR</span>
+        </div>
+        <div class="light-line"></div>
+
+        <p>
+          Booking.Pro is part of Booking Holdings Inc., the world leader in
+          online travel and related services.
+        </p>
+        <p>Copyright ©2025 Booking.Pro™. All rights reserved.</p>
+        <div class="brands">
+          <img
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_booking/27c8d1832de6a3123b6ee45b59ae2f81b0d9d0d0.png"
+            alt="Booking.com"
+          />
+          <img
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_priceline/f80e129541f2a952d470df2447373390f3dd4e44.png"
+            alt="Priceline"
+          />
+          <img
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_kayak/83ef7122074473a6566094e957ff834badb58ce6.png"
+            alt="Kayak"
+          />
+          <img
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_agoda/1c9191b6a3651bf030e41e99a153b64f449845ed.png"
+            alt="Agoda"
+          />
+          <img
+            src="https://cf.bstatic.com/static/img/tfl/group_logos/logo_opentable/a4b50503eda6c15773d6e61c238230eb42fb050d.png"
+            alt="OpenTable"
+          />
+        </div>
+      </div>
+    </footer>
+    <script src="./scripts/booking.js"></script>
+  </body>
+</html>
